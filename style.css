@@ -20,9 +20,10 @@
   background-image: url(https://preview.colorlib.com/theme/petsitting/images/bg_2.jpg.webp);
   background-attachment: fixed;
   width: 100%;
-  height: 110vh;
+  height: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -33,18 +34,19 @@
     align-items: flex-start;
     justify-content: space-evenly;
     width: 100%;
-    height: 98px;
+    height: 90px;
     background-color: white;
 
     .logo {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-end;
       width: 30%;
       height: 100%;
       gap: 20px;
-      font-size: 40px;
+      font-size: 30px;
       font-weight: 700;
+
 
       a {
         text-decoration: none;
@@ -61,12 +63,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 70%;
+      width: 60%;
       height: 100%;
       color: black;
-      font-size: 19px;
+      font-size: 17px;
       font-weight: 700;
-      gap: 45px;
+      gap: 30px;
 
       .nav_text {
         transition: 0.3s;
@@ -92,25 +94,213 @@
     width: 100%;
     height: 100%;
     color: white;
+    /* position: relative; */
+    z-index: 1;
+
 
     .f_div {
       display: flex;
       align-items: center;
       flex-direction: column;
       justify-content: center;
+      background-image: url(https://preview.colorlib.com/theme/petsitting/images/bg_1.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 110vh;
       font-size: 28px;
+      gap: 20px;
 
       h1 {
         width: 1017px;
         text-align: center;
       }
+
+      .overlay {
+        background-color: black;
+        opacity: 0.1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 110vh;
+      }
+
+      .btn{
+        background-color: #00BD56;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 600;
+        width: 150px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        border: 1px solid #00BD56;
+        cursor: pointer;
+        background-color: transparent;
+        transition: 0.3s;
+        color: #00BD56;
+      }
     }
+
+    .cards {
+      position: relative;
+      /* bottom: -300px; */
+      width: 100%;
+      height: 400px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: row;
+      background-color: #F8F9FD;
+
+      .card {
+        border-radius: 10px;
+        position: absolute;
+        top: -20px;
+        z-index: 2;
+        width: 330px;
+        height: 290px;
+
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+ 
+        .top {
+          color: #00BD56;
+          border-radius: 50%;
+          background-color: white;
+          width: 100px;
+          border: 1px solid black;
+          height: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: -55px;
+
+          .pos {
+            i {
+              font-size: 40px;
+            }
+          }
+
+        }
+
+        .center {
+          color: black;
+          width: 100%;
+          height: 400px;
+        }
+
+        .bottom {
+          background-color: #00BD56;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          bottom: -26px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+
+          a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+          }
+        }
+
+      
+
+      }
+
+
+
+    }
+
+    .why {
+      width: 100%;
+      height: 583px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      background-color: white;
+      color: black;
+
+      .left {
+        width: 30%;
+        height: 100%;
+
+        .img_box {
+          width: 462.5px;
+          height: 583px;
+          
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+      }
+
+      .right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+        height: 90%;
+
+        .bottom {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+
+          .up {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .left {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+            }
+
+          }
+        }
+      }
+
+
+    }
+
   }
 }
 
 .main_s {
   background-image: url(https://preview.colorlib.com/theme/petsitting/images/bg_3.jpg);
   background-attachment: fixed;
+  background-size: cover;
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
